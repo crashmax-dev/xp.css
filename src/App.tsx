@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import { Button } from './components/Button'
 
 export function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <button onClick={() => setCount((count) => count + 1)}>
-      count is {count}
-    </button>
+    <div style={{ display: 'flex', gap: '1rem' }}>
+      <Button>primary</Button>
+      <Button active>active</Button>
+      <Button focused>focused</Button>
+      <Button disabled>disabled</Button>
+    </div>
   )
 }
