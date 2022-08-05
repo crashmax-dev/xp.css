@@ -1,6 +1,19 @@
 // https://botoxparty.github.io/XP.css/
 @import 'xp.css';
 
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
 input[type='checkbox'] + label {
   user-select: none;
 }

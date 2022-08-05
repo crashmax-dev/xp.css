@@ -1,4 +1,5 @@
 import React, { useId } from 'react'
+import { FieldRow } from './FieldRow'
 
 type HTMLCheckboxInput = Omit<
   React.HTMLAttributes<HTMLInputElement>,
@@ -20,7 +21,7 @@ export function Checkbox({
   const id = useId()
 
   return (
-    <label>
+    <React.Fragment>
       <input
         {...props}
         id={id}
@@ -29,6 +30,8 @@ export function Checkbox({
         type="checkbox"
       />
       <label htmlFor={id}>{children}</label>
-    </label>
+    </React.Fragment>
   )
 }
+
+Checkbox.Row = FieldRow
