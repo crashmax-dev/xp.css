@@ -1,2 +1,6 @@
 // https://botoxparty.github.io/XP.css/
 @import 'xp.css';
+
+input[type='checkbox'] + label {
+  user-select: none;
+}
