@@ -1,0 +1,24 @@
+{
+  "name": "@xp.css/core",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "require": "./dist/core.cjs",
+    "default": "./dist/core.modern.js"
+  },
+  "main": "./dist/core.cjs",
+  "module": "./dist/core.module.js",
+  "unpkg": "./dist/core.umd.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle --sourcemap false"
+  },
+  "dependencies": {
+    "@xp.css/button": "workspace:^0.0.0",
+    "react": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.2",
+    "typescript": "^4.6.4"
+  }
+}

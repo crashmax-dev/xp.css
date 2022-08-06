@@ -1,0 +1,28 @@
+{
+  "name": "@xp.css/utils",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "require": "./dist/utils.cjs",
+    "default": "./dist/utils.modern.js"
+  },
+  "main": "./dist/utils.cjs",
+  "module": "./dist/utils.module.js",
+  "unpkg": "./dist/utils.umd.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle --sourcemap false"
+  },
+  "devDependencies": {
+    "@types/react": "16.8.0",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0",
+    "react": ">=16.8.0"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "react": "16.8.0"
+  }
+}
