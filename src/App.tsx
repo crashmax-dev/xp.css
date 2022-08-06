@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from './components/Button'
 import { Checkbox } from './components/Checkbox'
+import { Radio } from './components/Radio'
 
 export function App() {
   return (
@@ -29,6 +30,11 @@ export function App() {
           <Checkbox>2</Checkbox>
           <Checkbox>3</Checkbox>
         </Checkbox.Row>
+      </Box>
+      <Box>
+        <Radio>1</Radio>
+        <Radio>1</Radio>
+        <Radio>1</Radio>
       </Box>
     </React.Fragment>
   )
