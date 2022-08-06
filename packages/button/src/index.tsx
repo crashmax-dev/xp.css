@@ -4,15 +4,22 @@ import { cx } from '@xp.css/utils'
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
-  active?: boolean
-  focused?: boolean
-  disabled?: boolean
+  isActive?: boolean
+  isFocused?: boolean
+  isDisabled?: boolean
 }
 
-export function Button({ children, active, focused, ...props }: ButtonProps) {
+export function Button({
+  children,
+  isActive,
+  isFocused,
+  isDisabled,
+  ...props
+}: ButtonProps) {
   return (
     <button
-      className={cx(props.className, { active, focused })}
+      className={cx(props.className, { active: isActive, focused: isFocused })}
+      disabled={isDisabled}
       {...props}
     >
       {children}
